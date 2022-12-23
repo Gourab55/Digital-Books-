@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <style>
+      .content{
+          width:600px;
+          padding:50px;
+          margin: 50px auto;
+          box-shadow: 0 0 7px 5px rgba(0,0,0,5);
+          background-color:cyan;
+
+      }
+      .Create{
+        text-align: center;
+
+      }
+  </style>
+<body>
+
+    <div class="content">
+  
+       <h4 class="Create">Create Book</h4>
+        <div class="mb-3">
+            <label for="bookname" class="form-label">Book Name</label>
+            <input type="text" [(ngModel)]="book.book_name" class="form-control" id="bookname" >
+           
+          </div>
+          <div class="mb-3">
+            <label for="bookauthor" class="form-label">Book Author</label>
+            <input type="text" [(ngModel)]="book.book_author"class="form-control" id="bookauthor">
+          </div>
+          <div class="mb-3">
+            <label for="bookprice" class="form-label">Book Price</label>
+            <input type="number" [(ngModel)]="book.book_price" class="form-control" id="bookprice">
+          </div>
+          <div class="mb-3">
+            <label for="bookgenre" class="form-label">Book Genre</label>
+            <input type="text" [(ngModel)]="book.book_genre" class="form-control" id="bookgenre">
+          </div>
+          <div class="mb-3">
+            <label for="borrowedstatus" class="form-label">Borrowed Status</label>
+            <input type="text" [(ngModel)]="book.borrowed_status" class="form-control" id="borrowedstatus" >
+          </div>
+          <div >
+            <button type="button" class="btn btn-outline-primary"  (click)="save()" >Submit</button>
+          </div>
+       
+       
+    </div>
+</body>
+</html>

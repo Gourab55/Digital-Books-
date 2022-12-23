@@ -1,0 +1,18 @@
+package com.Library.Swagger;
+
+import org.springframework.context.annotation.Bean;
+
+public class swaggerConfiguration {
+	
+	@Bean
+	public Docket productApi() {
+		return new Docket(DocumentationType.SWAGGER_2)
+				.select()
+				.apis(RequestHandlerSelectors.basePackage("com.Library.Swagger"))
+				.paths(PathSelectors.any())
+				.build();
+//				.apiInfo(metaInfo());
+	}
+
+
+}

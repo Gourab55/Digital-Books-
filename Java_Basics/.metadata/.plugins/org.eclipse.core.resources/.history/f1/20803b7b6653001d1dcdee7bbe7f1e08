@@ -1,0 +1,39 @@
+package mypractics;
+
+import java.util.*;
+
+public class practicsCollection {
+	
+	public static void main(String[] args) {
+		
+	
+	
+	List<Integer> a1= new ArrayList<Integer>();
+     a1.add(10);
+     a1.add(20);
+     a1.add(30);
+     a1.add(40);
+     
+     //System.out.println("array lists elements are"+a1);
+     
+     Iterator<Integer> it= a1.iterator();
+    Integer max= it.next();
+    int c=0;
+    int max1=0;
+     while(it.hasNext()) {
+    	 
+    	 max1=it.next();
+    	 if(max <  max1)
+    		 max= max1;
+    	
+    	 
+    	
+     }
+     
+     System.out.println("Max elements in the arraylist"+max);
+  
+	
+	
+	}
+
+}

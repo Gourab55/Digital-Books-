@@ -1,0 +1,6 @@
+<h2> Scientist Name:{{employee.name | uppercase}}</h2>
+<h3> Base salary: {{ employee.BaseSalary | currency:"EUR"}}</h3>
+<h3> Joined Isro on: {{employee.JoinedOn | date}}</h3>
+<h3> Qualification: {{employee.Qualification | lowercase}}</h3>
+<h3> SuccessRate: {{employee.Successrate | percent}}</h3>
+<h3> About: {{ employee.About | ellipsis}}</h3>

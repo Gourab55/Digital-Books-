@@ -1,0 +1,23 @@
+package mypractics;
+
+import java.util.*;
+
+public class practicsCollection {
+	
+	public static void main(String[] args) {
+		
+	
+	
+	List<Integer> a1= new ArrayList<Integer>();
+     a1.add(10);
+     a1.add(20);
+     a1.add(30);
+     a1.add(40);
+     
+     System.out.println("array lists elements are"+a1);
+  
+	
+	
+	}
+
+}

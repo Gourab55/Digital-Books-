@@ -1,0 +1,12 @@
+INDEX VERSION 1.131+D:\AJAW_10.03.2022\Java_Basics\.metadata\.plugins\org.eclipse.jdt.core
+1279936986.index
+2096392216.index
+1074734298.index
+2249535973.index
+2807440805.index
+4157282123.index
+2934891738.index
+3647657869.index
+636593692.index
+3840410258.index
+1602128660.index

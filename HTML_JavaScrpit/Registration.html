@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="./Register.js"></script>
+    <link rel="stylesheet" href="Regd.css">
+</head>
+<body>
+    
+        <div class="container">
+            <h2>Registrtaation</h2>
+            
+            <form name="form1" action="./FormEx.html" target="_blank" method="post" onsubmit="return register()">
+             <h3> Personal Details </h3> 
+             
+             <table>
+                <tr>
+            <td class="left" >
+             <label for="fanme"> Full Name</label> <br>
+        <input id="fname" type="text" placeholder="Enter your name"  name="fname"/> <br></td>
+         <td colspan="6">                 
+        <label for="dob"> Date of Birth</label> <br>
+        <input id="dob" type="text" placeholder="Enter birth date"  name="dob"/> <br> </td> 
+            </td>
+            <td colspan="6">
+                <label for="email"> Eamil</label> <br>
+         <input id="email" type="text" placeholder="Enter your email"  name="email"/> <br>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="left">
+                
+       <label for="mblno"> Mobile Number</label> <br>
+       <input id="mblno" type="text" placeholder="Enter mobile number"  name="mblno"/> <br> </td>
+       <td colspan="6" > 
+        <label for="gender"> Gender</label> <br>
+        <input id="gender" type="text" placeholder="Enter your gender"  name="gender"/> <br> </td>
+
+        <td colspan="6" > 
+            <label for="ocuptn"> Occupation</label> <br>
+        <input id="ocuptn" type="text" placeholder="Enter occupation"  name="ocuptn"/> <br> </td>
+        </tr>
+    </table>
+    
+        <h3>Identity Details</h3>
+        <table>
+            <tr>
+                <td class="left"> 
+                    <label for="idtype"> ID Type</label> <br>
+                 <input id="idtype" type="text" placeholder="Enter ID type"  name="idtype"/> <br>
+                </td>
+                <td colspan="6" > 
+                    <label for="idno">ID Number</label> <br>
+                    <input id="idno" type="text" placeholder="Enter ID number"  name="idno"/> <br>
+                </td>
+                <td colspan="6">
+                    <label for="isuauth"> Issue Authority</label> <br>
+                <input id="isuauth" type="text" placeholder="Enter issue department"  name="isuauth"/> <br>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"> 
+                    <label for="issuedate"> Issue Date</label> <br>
+                    <input id="issuedate" type="text" placeholder="Enter ID issue date"  name="issuedate"/> <br>
+                </td>
+                <td colspan="6">
+        <label for="issuestate"> Issue State</label> <br>
+        <input id="issuestate" type="text" placeholder="Enter ID issue state"  name="issuestate"/> <br>
+                </td>
+                <td colspan="6">
+                    <label for="expdate"> Expiry Date</label> <br>
+                    <input id="expdate" type="text" placeholder="Enter ID expiry date"  name="expdate"/> <br>
+
+                </td>
+
+            </tr>
+        </table>
+
+    <input type="submit"  value="Next->" id="submit"/>
+
+             </form>
+    
+        
+    <div>
+</body>
+</html>     

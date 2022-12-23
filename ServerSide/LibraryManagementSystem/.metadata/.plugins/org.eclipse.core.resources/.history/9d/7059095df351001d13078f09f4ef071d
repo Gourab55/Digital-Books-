@@ -1,0 +1,14 @@
+package com.Library.service;
+
+
+
+import java.util.List;
+
+import com.Library.entity.Book;
+
+public interface IBookService {
+	
+	Integer createBook(Book book);
+	public List<Book> getallBooks();
+
+}

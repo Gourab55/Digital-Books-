@@ -1,0 +1,38 @@
+package com.Library.Exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(value= HttpStatus.NOT_FOUND)
+public class ResourceNotFoundException extends RuntimeException{
+	
+	private static final long serialVersionUid=1L;
+	
+	private String resourceName;
+	private String fieldname;
+	private Integer fieldvalue;
+	public static long getSerialversionuid() {
+		return serialVersionUid;
+	}
+	public String getResourceName() {
+		return resourceName;
+	}
+	public String getFieldname() {
+		return fieldname;
+	}
+	public Integer getFieldvalue() {
+		return fieldvalue;
+	}
+	public ResourceNotFoundException(String resourceName, String fieldname, Integer fieldvalue) {
+		super(String.format(" %s not found with %s %s", resourceName,fieldname,fieldvalue));
+		this.resourceName = resourceName;
+		this.fieldname = fieldname;
+		this.fieldvalue = fieldvalue;
+	}
+	
+	
+	
+	
+	
+
+}

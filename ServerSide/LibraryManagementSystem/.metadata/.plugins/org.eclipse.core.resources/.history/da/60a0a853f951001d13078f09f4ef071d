@@ -1,0 +1,45 @@
+package com.Library.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.Library.Exception.ResourceNotFoundexception;
+import com.Library.entity.Book;
+
+@Service
+public class BookServiceImpl implements IBookService{
+
+	@Autowired
+	IBookRepo  ibookrepo;
+	
+	@Override
+	public Integer createBook(Book book) {
+		Book createBook=ibookrepo.save(book);
+		return createBook.getId();
+	}
+
+	@Override
+	public List<Book> getallBooks() {
+		
+		return ibookrepo.findAll();
+	}
+
+	@Override
+	public Optional<Book> getBooksByid(Integer id) {
+		
+		return ibookrepo.findById(id);
+	}
+
+	@Override
+	public Book updateBook(Book book, Integer id) {
+		//first we need to check whether that book exist or not
+		Book existingBook=ibookrepo.findById(id).orElseThrow(
+		() -> new ResourceNotFoundexception("Book","id", id));
+		return null;
+	}
+
+}

@@ -1,0 +1,20 @@
+{
+  "books": [
+    {
+      "book_name": "dfrg",
+      "book_author": "dfrg",
+      "book_price": 12,
+      "book_genre": "fgrt",
+      "borrowed_status": "etry",
+      "id": 2
+    },
+    {
+      "book_name": "life part",
+      "book_author": "gourab",
+      "book_price": 200,
+      "book_genre": "old",
+      "borrowed_status": "true",
+      "id": 3
+    }
+  ]
+}

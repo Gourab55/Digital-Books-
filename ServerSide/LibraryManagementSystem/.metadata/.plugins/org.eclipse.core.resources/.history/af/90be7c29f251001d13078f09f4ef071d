@@ -1,0 +1,11 @@
+package com.Library.service;
+
+
+
+import com.Library.entity.Book;
+
+public interface IBookService {
+	
+	Integer createBook(Book book);
+
+}

@@ -1,0 +1,26 @@
+<ul class="list-group">
+    <li *ngFor="let s of students; index as i " class="list-group-item">
+        <span>
+            {{s.firstname}}
+        </span>
+        <span>
+            {{s.lastname}}
+        </span>
+        <span>
+            Class: {{s.class}}
+        </span>
+        <span>
+            Email: {{s.email}}
+        </span>
+        <span>
+            Gender: {{s.gender}}
+        </span>
+        <br/>
+        <button type="button" (click)="deleteRow(s,i)" style="margin-left: 1200px; color: red;background-color: red;"
+         class="btn-close" aria-label="close" ></button>
+  
+
+
+ </li>
+</ul>
+<button type="button"  (click)="sort()"style="margin-left: 40px; margin-top: 25px; "class="btn btn-secondary">Sorting</button>
